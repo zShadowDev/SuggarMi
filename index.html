@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> ::INICIO::</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+    <script>
+        function Accion(){
+            alert('Sabía que sí querias SuggarLi ♥ Te Quiero Muuucho.. Miau :3');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="container text-center">
+        <br>
+        <br>
+        <section>
+            <div align="center">
+            <table border="table table-bordered" >
+                <tr>
+                    <td><img src="img/image1.jpg" width="350" height="350" /></td>
+                    <td> - </td>
+                    <td><img src="img/image2.jpg" width="350" height="350" /></td>
+                    <td> - </td>
+                    <td><img src="img/image3.jpg" width="350" height="350" /></td>
+                </tr>
+            </table>
+            </div>
+        </section>
+        <br>
+        <h3>SuggarMi te hace una pregunta</h3>
+        <p>¿Quieres estar conmigo toda la vida? :3</p>
+    <input type="button" onclick="Accion()" id="btnSi" value="SI" class="btn btn-primary" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()"  class="btn btn-primary" value="NO" />
+    </div>    
+</body>
+</html>
